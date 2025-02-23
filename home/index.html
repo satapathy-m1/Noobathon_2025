@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legendary Hub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="custom-nav">
+        <div class="custom-nav-logo">
+            <img src="assets/neon-logo.jpeg" alt="Logo" class="logo-spin">
+            <span>The Legendary Hub</span>
+        </div>
+        
+        <div class="custom-nav-links">
+            <a href="index.html" class="custom-nav-link active">Home</a>
+            <a href="../HIMYM-master/CharcterCards.html" class="custom-nav-link">Characters</a>
+            <div class="custom-dropdown">
+                <button class="custom-dropbtn pulse-button">
+                    Play Now 
+                    <i class="fas fa-gamepad"></i>
+                </button>
+                <div class="custom-dropdown-content">
+                    <a href="../quiz/index.html" class="dropdown-item">
+                        <i class="fas fa-dice"></i>
+                        <div class="dropdown-text">
+                            <span>Quick Quiz</span>
+                            <span class="subtitle">Test your knowledge</span>
+                        </div>
+                    </a>
+                    <a href="../Destiny/index.html" class="dropdown-item">
+                        <i class="fas fa-trophy"></i>
+                        <div class="dropdown-text">
+                            <span>Test Your Destiny</span>
+                            <span class="subtitle">View rankings</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="../barney's playbook/index1.html" class="custom-nav-link">Playbook</a>
+            <a href="../gif/index.html" class="custom-nav-link">Gifs</a>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>Dark Mode
+            </button>
+            <a href="#" id="auth-link" class="custom-nav-link">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="welcome-message" class="glowing-text">Welcome to the Legend</h1>
+                <p id="character-quote" class="typing-effect">This is going to be legendary!</p>
+                
+            </div>
+            <div class="hero-image">
+                <img id="character-image" src="assets/hi.jpg" alt="Character" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Catchphrase Section -->
+    <section class="catchphrase-section">
+        <div class="catchphrase-container">
+            <div class="catchphrase-text">
+                <h2 id="catchphrase-greeting">Hey, Legend!</h2>
+                <p id="catchphrase-message">Tap below for a legendary quote!</p>
+                <button id="catchphrase-btn" class="bounce-button">Generate Catchphrase</button>
+                <p id="catchphrase-display" class="quote-text"></p>
+            </div>
+            <div class="catchphrase-image">
+                <img id="catchphrase-character" src="assets/hi.jpg" alt="Character" class="floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <h2 class="section-title">Legendary Locations</h2>
+        <div id="map"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

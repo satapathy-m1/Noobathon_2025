@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join The Legendary Hub!</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    
+    
+    <div class="auth-container">
+        <h1>Welcome to MacLaren’s Pub 🍻</h1>
+        <p>Register to join the gang!</p>
+
+        <form id="register-form">
+            <input type="text" id="name" placeholder="Your Name (e.g., Ted Mosby)" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="username" placeholder="Choose a Legendary Username" required>
+            
+            <select id="fav-character" required>
+                <option value="" disabled selected>Your Favorite HIMYM Character</option>
+                <option value="Ted Mosby">Ted Mosby</option>
+                <option value="Barney Stinson">Barney Stinson</option>
+                <option value="Robin Scherbatsky">Robin Scherbatsky</option>
+                <option value="Marshall Eriksen">Marshall Eriksen</option>
+                <option value="Lily Aldrin">Lily Aldrin</option>
+            </select>
+
+            <button type="submit">Sign Up & Suit Up! 🕴️</button>
+        </form>
+
+        <p>Already a member? <a href="login.html">Log in here</a></p>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

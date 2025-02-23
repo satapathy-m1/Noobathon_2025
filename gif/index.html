@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF CENTER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: url(abc.jpg);
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            backdrop-filter: blur(4px);
+        }
+
+        .banner {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <nav class="custom-nav">
+        <div class="custom-nav-logo">
+            <img src="neon-logo.jpeg" alt="Logo">
+            <span>The Legendary Hub</span>
+        </div>
+        
+        <div class="custom-nav-links">
+            <a href="../home/index.html" class="custom-nav-link">Home</a>
+            <a href="../HIMYM-master/CharcterCards.html" class="custom-nav-link">Character</a>
+            
+            <div class="custom-dropdown">
+                <button class="custom-dropbtn">
+                    Lets Play 
+                    <svg class="dropdown-icon" viewBox="0 0 24 24">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </button>
+                <div class="custom-dropdown-content">
+                    <a href="../quiz/index.html" class="dropdown-item">
+                        <i class="fas fa-home"></i>
+                        <div class="dropdown-text">
+                            <span>Quiz</span>
+                            <span class="subtitle">Return to homepage</span>
+                        </div>
+                    </a>
+                    <a href="../Destiny/index.html" class="dropdown-item">
+                        <i class="fas fa-user"></i>
+                        <div class="dropdown-text">
+                            <span>Test Your Destiny</span>
+                            <span class="subtitle">View your profile</span>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-cog"></i>
+                        <div class="dropdown-text">
+                            <span>Settings</span>
+                            <span class="subtitle">Manage your preferences</span>
+                        </div>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+            <a href="../barney's playbook/index1.html" class="custom-nav-link">Playbook</a>
+            <a href="../gif/index.html" class="custom-nav-link">Gifs</a>
+        </div>
+    </nav> 
+             
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/dragon_1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <!-- <h1 data-content="Memories"></h1> -->
+            <!-- <div class="author">
+                <h2>LUN DEV</h2>
+                <p><b>Web Design</b></p>
+                <p>Subscribe to the channel to watch many interesting videos</p>
+            </div> -->
+            <div class="model"></div>
+        </div>
+    </div>
+</body>
+</html>
